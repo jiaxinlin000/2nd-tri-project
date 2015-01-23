@@ -1,0 +1,47 @@
+public Animal(double bp, String n, double fp, double sp)
+		{
+		babyP=bp;
+		name=n;
+		foodP=fp;
+		sellP=sp; 
+		}
+
+	public double getBabyP()
+		{
+		return babyP;
+		}
+
+	public String getName()
+		{
+		return name;
+		}
+
+	public double getFoodP()
+		{
+		return foodP;
+		}
+
+	public double getSellP()
+		{
+		return sellP;
+		}
+
+	public void setBabyP(double babyP)
+		{
+		this.babyP = babyP;
+		}
+
+	public void setName(String name)
+		{
+		this.name = name;
+		}
+
+	public void setFoodP(double foodP)
+		{
+		this.foodP = foodP;
+		}
+
+	public void setSellP(double sellP)
+		{
+		this.sellP = sellP;
+		}
