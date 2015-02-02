@@ -1,4 +1,8 @@
-public Animal(double bp, String n, double fp, double sp)
+	 public static double babyP;
+     public static String name;
+     public static double foodP;
+     public static double sellP; 
+	public Zoo(double bp, String n, double fp, double sp)
 		{
 		babyP=bp;
 		name=n;
