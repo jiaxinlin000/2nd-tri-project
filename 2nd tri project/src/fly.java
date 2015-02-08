@@ -1,6 +1,6 @@
 
 public interface fly
 	{
-	public abstract void canFly(); 
+	public abstract void flies(); 
 		
 	}

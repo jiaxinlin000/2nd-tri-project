@@ -1,99 +1,453 @@
 
 public class Animal
 	{
-	protected double babyP;
-	protected String name; 
-	protected double foodP;
-	protected double sellP;
-	protected int originalName;
-	protected int raisedD;
-	protected int lifeTime; 
-	protected climb climbBehavior;
-	protected swim swimBehavior; 
+	protected static double babyP;
+	protected static String name; 
+	protected static double foodP;
+	protected static double sellP;
+	protected static String type; 
+	protected static int raisedD;
+	
+	protected static fly flyB; 
+	protected static climb climbB;
+	protected static swim swimB; 
+	protected static eat eatB; 
 	
 	
-	public double getBabyP()
-		{
+	
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	public static double getBabyP() {
 		return babyP;
-		}
+	}
 
 
-	public String getName()
-		{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setBabyP(double babyP) {
+		Animal.babyP = babyP;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static String getName() {
 		return name;
-		}
+	}
 
 
-	public double getFoodP()
-		{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setName(String name) {
+		Animal.name = name;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static double getFoodP() {
 		return foodP;
-		}
+	}
 
 
-	public double getSellP()
-		{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setFoodP(double foodP) {
+		Animal.foodP = foodP;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static double getSellP() {
 		return sellP;
-		}
+	}
 
 
-	public int getOriginalName()
-		{
-		return originalName;
-		}
 
 
-	public int getRaisedD()
-		{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setSellP(double sellP) {
+		Animal.sellP = sellP;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static String getType() {
+		return type;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setType(String type) {
+		Animal.type = type;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static int getRaisedD() {
 		return raisedD;
-		}
+	}
 
 
-	public int getLifeTime()
-		{
-		return lifeTime;
-		}
 
 
-	public void setBabyP(double babyP)
-		{
-		this.babyP = babyP;
-		}
 
 
-	public void setName(String name)
-		{
-		this.name = name;
-		}
 
 
-	public void setFoodP(double foodP)
-		{
-		this.foodP = foodP;
-		}
 
 
-	public void setSellP(double sellP)
-		{
-		this.sellP = sellP;
-		}
 
 
-	public void setOriginalName(int originalName)
-		{
-		this.originalName = originalName;
-		}
 
 
-	public void setRaisedD(int raisedD)
-		{
-		this.raisedD = raisedD;
-		}
 
 
-	public void setLifeTime(int lifeTime)
-		{
-		this.lifeTime = lifeTime;
-		}
+
+
+	public static void setRaisedD(int raisedD) {
+		Animal.raisedD = raisedD;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static fly getFlyB() {
+		return flyB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setFlyB(fly flyB) {
+		Animal.flyB = flyB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static climb getClimbB() {
+		return climbB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setClimbB(climb climbB) {
+		Animal.climbB = climbB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static swim getSwimB() {
+		return swimB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setSwimB(swim swimB) {
+		Animal.swimB = swimB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static eat getEatB() {
+		return eatB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setEatB(eat eatB) {
+		Animal.eatB = eatB;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	public void getAnimal()
@@ -101,6 +455,7 @@ public class Animal
 		System.out.println("You got an animal!");
 		
 		}
+	
 	
 	
 	

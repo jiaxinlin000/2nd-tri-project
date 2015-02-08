@@ -1,5 +1,5 @@
 
 public interface swim
 	{
-	public abstract void canSwim(); 
+	public abstract void swims(); 
 	}

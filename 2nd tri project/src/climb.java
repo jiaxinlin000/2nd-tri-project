@@ -1,5 +1,5 @@
 
 public interface climb
 	{
-		public abstract void canClimb(); 
+		public abstract void climbs(); 
 	}
