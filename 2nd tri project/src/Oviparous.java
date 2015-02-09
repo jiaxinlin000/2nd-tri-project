@@ -1,11 +1,14 @@
 
-public abstract class Oviparous extends Animal
+public  class Oviparous extends Animal
 	{
-	public void getAnimal()
+	public static void getAnimal()
 		{
 		System.out.println("You got an egg ");
 		
 		}
-	public abstract void changeName(); 
+	public static void changeName()
+	{
+		
+	}
 	
 	}

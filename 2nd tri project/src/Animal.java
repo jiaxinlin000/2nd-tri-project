@@ -450,9 +450,9 @@ public class Animal
 
 
 
-	public void getAnimal()
+	public static void getAnimal()
 		{
-		System.out.println("You got an animal!");
+		
 		
 		}
 	

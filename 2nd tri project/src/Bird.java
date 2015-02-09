@@ -33,7 +33,7 @@ public class Bird extends Oviparous {
 		
 		
 	}
-	public void changeName()
+	public static void changeName()
 	{
 		System.out.println("Give a name to this "+ type+" !");
 		Scanner keyboard= new Scanner(System.in); 
