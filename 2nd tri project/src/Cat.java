@@ -32,6 +32,11 @@ public class Cat extends Mammal{
 		
 		type= "Cat"; 
 		
+		raisedD=0; 
+		dayNF=0; 
+		
+		
+		
 		
 		
 	}

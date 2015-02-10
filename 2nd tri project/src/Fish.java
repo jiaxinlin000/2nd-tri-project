@@ -30,6 +30,9 @@ public class Fish extends Oviparous{
 		
 		type= "Fish"; 
 		
+		raisedD=0; 
+		dayNF=0; 
+		
 		
 		
 	}

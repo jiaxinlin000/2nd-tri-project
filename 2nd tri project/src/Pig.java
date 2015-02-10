@@ -32,7 +32,9 @@ public class Pig extends Mammal{
 		
 		type= "Pig"; 
 		
+		raisedD=0; 
 		
+		dayNF=0; 
 		
 	}
 	public static void changeName()

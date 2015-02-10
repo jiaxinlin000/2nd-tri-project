@@ -30,6 +30,8 @@ public class Bird extends Oviparous {
 		
 		type= "Bird"; 
 		
+		raisedD=0; 
+		dayNF=0; 
 		
 		
 	}

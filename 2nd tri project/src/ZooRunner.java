@@ -6,6 +6,7 @@ public class ZooRunner
 	private static int animals=0;
 	private static ArrayList <Animal>zoo= new <Animal>ArrayList(); 
 	
+	
     
 	
 	public static void main(String[] args)
@@ -16,8 +17,9 @@ public class ZooRunner
 
 		{
 			buyAnimal(); 	
+			feedAnimal(); 
 		}
-		
+		System.out.println("GAME OVER!!!!!");
 	
 		}
 	public static void buyAnimal()
@@ -40,6 +42,10 @@ public class ZooRunner
 			Fish.getAnimal(); 
 			System.out.println("The egg turns into a fish!");
 			Fish.changeName(); 
+			Fish.flyB.flies();
+			Fish.eatB.eats();
+			Fish.climbB.climbs();
+			Fish.swimB.swims();
 			System.out.println("remember to feed "+Fish.getName() +" everyday, or it will die.");
 			break; 
 		}
@@ -82,6 +88,42 @@ public class ZooRunner
 		}
 		}
 
+	}
+	
+	public static void feedAnimal()
+	{
+		for(int i=0; i<zoo.size();i++)
+		{
+			System.out.println("Do you want to feed "+zoo.get(i).getName()+" ?");
+			System.out.println("its food cost "+zoo.get(i).getFoodP()+" .");
+			System.out.println("1. Yes.");
+			System.out.println("2. No");
+			Scanner keypad2= new Scanner(System.in); 
+			int feedA= keypad2.nextInt();
+			switch(feedA)
+			{
+			case 1: 
+				System.out.println("Thank you!");
+				break; 
+				
+			case 2:
+				zoo.get(i).setDayNF(zoo.get(i).getDayNF()+1);
+				if(zoo.get(i).getDayNF()==2)
+				{
+					System.out.println("T_T "+zoo.get(i).getName()+" died!");
+					zoo.remove(i);
+					i--; 
+					
+				}
+				else 
+				{
+					System.out.println("If you don't feed "+zoo.get(i).getName()+" tomorrow, it will die!");
+					
+				}
+			
+				
+			}
+		}
 	}
 
 	}

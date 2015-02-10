@@ -7,11 +7,55 @@ public class Animal
 	protected static double sellP;
 	protected static String type; 
 	protected static int raisedD;
+	protected static int dayNF; 
 	
+	public static int getDayNF() {
+		return dayNF;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static void setDayNF(int dayNF) {
+		Animal.dayNF = dayNF;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	protected static fly flyB; 
 	protected static climb climbB;
 	protected static swim swimB; 
 	protected static eat eatB; 
+	
 	
 	
 	
