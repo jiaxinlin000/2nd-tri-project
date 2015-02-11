@@ -6,7 +6,7 @@ public class Mammal extends Animal
 			System.out.println("You got a little baby");
 			  
 			}
-		public static void changeName()
+		public void changeName()
 		{
 			
 		}

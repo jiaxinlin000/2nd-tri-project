@@ -1,17 +1,15 @@
 
 public class Animal
 	{
-	protected static double babyP;
-	protected static String name; 
-	protected static double foodP;
-	protected static double sellP;
-	protected static String type; 
-	protected static int raisedD;
-	protected static int dayNF; 
+	protected  double babyP;
+	protected  String name; 
+	protected  double foodP;
+	protected  double sellP;
+	protected  String type; 
+	protected  int raisedD;
+	protected  int dayNF; 
 	
-	public static int getDayNF() {
-		return dayNF;
-	}
+	
 
 
 
@@ -29,32 +27,10 @@ public class Animal
 
 
 
-
-	public static void setDayNF(int dayNF) {
-		Animal.dayNF = dayNF;
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	protected static fly flyB; 
-	protected static climb climbB;
-	protected static swim swimB; 
-	protected static eat eatB; 
+	protected  fly flyB; 
+	protected  climb climbB;
+	protected  swim swimB; 
+	protected  eat eatB; 
 	
 	
 	
@@ -74,7 +50,13 @@ public class Animal
 
 
 
-	public static double getBabyP() {
+
+
+
+
+
+
+	public double getBabyP() {
 		return babyP;
 	}
 
@@ -95,8 +77,15 @@ public class Animal
 
 
 
-	public static void setBabyP(double babyP) {
-		Animal.babyP = babyP;
+
+
+
+
+
+
+
+	public void setBabyP(double babyP) {
+		this.babyP = babyP;
 	}
 
 
@@ -116,7 +105,14 @@ public class Animal
 
 
 
-	public static String getName() {
+
+
+
+
+
+
+
+	public String getName() {
 		return name;
 	}
 
@@ -137,8 +133,15 @@ public class Animal
 
 
 
-	public static void setName(String name) {
-		Animal.name = name;
+
+
+
+
+
+
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 
@@ -158,7 +161,14 @@ public class Animal
 
 
 
-	public static double getFoodP() {
+
+
+
+
+
+
+
+	public double getFoodP() {
 		return foodP;
 	}
 
@@ -179,8 +189,15 @@ public class Animal
 
 
 
-	public static void setFoodP(double foodP) {
-		Animal.foodP = foodP;
+
+
+
+
+
+
+
+	public void setFoodP(double foodP) {
+		this.foodP = foodP;
 	}
 
 
@@ -200,7 +217,14 @@ public class Animal
 
 
 
-	public static double getSellP() {
+
+
+
+
+
+
+
+	public double getSellP() {
 		return sellP;
 	}
 
@@ -221,8 +245,15 @@ public class Animal
 
 
 
-	public static void setSellP(double sellP) {
-		Animal.sellP = sellP;
+
+
+
+
+
+
+
+	public void setSellP(double sellP) {
+		this.sellP = sellP;
 	}
 
 
@@ -242,7 +273,14 @@ public class Animal
 
 
 
-	public static String getType() {
+
+
+
+
+
+
+
+	public String getType() {
 		return type;
 	}
 
@@ -263,8 +301,15 @@ public class Animal
 
 
 
-	public static void setType(String type) {
-		Animal.type = type;
+
+
+
+
+
+
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 
@@ -284,7 +329,14 @@ public class Animal
 
 
 
-	public static int getRaisedD() {
+
+
+
+
+
+
+
+	public int getRaisedD() {
 		return raisedD;
 	}
 
@@ -305,8 +357,15 @@ public class Animal
 
 
 
-	public static void setRaisedD(int raisedD) {
-		Animal.raisedD = raisedD;
+
+
+
+
+
+
+
+	public void setRaisedD(int raisedD) {
+		this.raisedD = raisedD;
 	}
 
 
@@ -326,7 +385,70 @@ public class Animal
 
 
 
-	public static fly getFlyB() {
+
+
+
+
+
+
+
+	public int getDayNF() {
+		return dayNF;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public void setDayNF(int dayNF) {
+		this.dayNF = dayNF;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public fly getFlyB() {
 		return flyB;
 	}
 
@@ -347,8 +469,15 @@ public class Animal
 
 
 
-	public static void setFlyB(fly flyB) {
-		Animal.flyB = flyB;
+
+
+
+
+
+
+
+	public void setFlyB(fly flyB) {
+		this.flyB = flyB;
 	}
 
 
@@ -368,7 +497,14 @@ public class Animal
 
 
 
-	public static climb getClimbB() {
+
+
+
+
+
+
+
+	public climb getClimbB() {
 		return climbB;
 	}
 
@@ -389,8 +525,15 @@ public class Animal
 
 
 
-	public static void setClimbB(climb climbB) {
-		Animal.climbB = climbB;
+
+
+
+
+
+
+
+	public void setClimbB(climb climbB) {
+		this.climbB = climbB;
 	}
 
 
@@ -410,7 +553,14 @@ public class Animal
 
 
 
-	public static swim getSwimB() {
+
+
+
+
+
+
+
+	public swim getSwimB() {
 		return swimB;
 	}
 
@@ -431,8 +581,15 @@ public class Animal
 
 
 
-	public static void setSwimB(swim swimB) {
-		Animal.swimB = swimB;
+
+
+
+
+
+
+
+	public void setSwimB(swim swimB) {
+		this.swimB = swimB;
 	}
 
 
@@ -452,7 +609,14 @@ public class Animal
 
 
 
-	public static eat getEatB() {
+
+
+
+
+
+
+
+	public eat getEatB() {
 		return eatB;
 	}
 
@@ -473,9 +637,23 @@ public class Animal
 
 
 
-	public static void setEatB(eat eatB) {
-		Animal.eatB = eatB;
+
+
+
+
+
+
+
+	public void setEatB(eat eatB) {
+		this.eatB = eatB;
 	}
+
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@ public class ZooRunner
 	private static ArrayList <Animal>zoo= new <Animal>ArrayList(); 
 	
 	
+	
     
 	
 	public static void main(String[] args)
@@ -24,6 +25,7 @@ public class ZooRunner
 		}
 	public static void buyAnimal()
 	{
+		Animal a= new Animal(); 
 		System.out.println("What animal do you want to buy?");
 		System.out.println("1. fish.");
 		System.out.println("2. bird.");
@@ -31,59 +33,116 @@ public class ZooRunner
 		System.out.println("4. cat. "); 
 		Scanner keypad1= new Scanner(System.in);
 		int animalNumber=keypad1.nextInt();
+	
 		switch(animalNumber)
 		{
 		case 1:
 		{
-			zoo.add(new Fish()); 
+			a= new Cat();
+			Animal a2=a; 
+			zoo.add(a2); 
 			
 			animals++; 
-			start= start-Fish.getBabyP();
-			Fish.getAnimal(); 
-			System.out.println("The egg turns into a fish!");
-			Fish.changeName(); 
-			Fish.flyB.flies();
-			Fish.eatB.eats();
-			Fish.climbB.climbs();
-			Fish.swimB.swims();
-			System.out.println("remember to feed "+Fish.getName() +" everyday, or it will die.");
+			start= start-zoo.get(animals-1).getBabyP(); 
+			Cat.getAnimal();
+			System.out.println("A baby cat!");
+			System.out.println("Give a name to this cat !");
+			String newName= new String();
+			newName= new Scanner(System.in).next(); 
+			
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" "+zoo.get(i).getName());
+			}
+			zoo.get(animals).setName(newName); 
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" " +zoo.get(i).getName()+" ");
+			}
+			
+//			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
 			break; 
 		}
 		case 2:
 		{
-			zoo.add(new Bird()); 
+			a= new Cat();
+			Animal a2=a; 
+			zoo.add(a2); 
 			
 			animals++; 
-			start= start-Bird.getBabyP(); 
-			Bird.getAnimal();
-			System.out.println("The egg turns into a bird!");
-			Bird.changeName(); 
-			System.out.println("remember to feed "+Bird.getName()+" everyday, or it will die.");
+			start= start-zoo.get(animals-1).getBabyP(); 
+			Cat.getAnimal();
+			System.out.println("A baby cat!");
+			System.out.println("Give a name to this cat !");
+			String newName= new String();
+			newName= new Scanner(System.in).next(); 
+			
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" "+zoo.get(i).getName());
+			}
+			zoo.get(animals).setName(newName); 
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" " +zoo.get(i).getName()+" ");
+			}
+			
+//			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
 			break; 
 		}
 		case 3: 
 		{
-			zoo.add(new Pig()); 
+			a= new Cat();
+			Animal a2=a; 
+			zoo.add(a2); 
 			
 			animals++; 
-			start= start-Pig.getBabyP(); 
-			Pig.getAnimal();
-			System.out.println("A baby pig!");
-			Pig.changeName(); 
-			System.out.println("remember to feed "+Pig.getName() +" everyday, or it will die.");
+			start= start-zoo.get(animals-1).getBabyP(); 
+			Cat.getAnimal();
+			System.out.println("A baby cat!");
+			System.out.println("Give a name to this cat !");
+			String newName= new String();
+			newName= new Scanner(System.in).next(); 
+			
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" "+zoo.get(i).getName());
+			}
+			zoo.get(animals).setName(newName); 
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" " +zoo.get(i).getName()+" ");
+			}
+			
+//			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
 			break; 
 			
 		}
 		case 4:
 		{
-			zoo.add(new Cat()); 
+			a= new Cat();
+			Animal a2=a; 
+			zoo.add(a2); 
 			
 			animals++; 
-			start= start-Cat.getBabyP(); 
+			start= start-zoo.get(animals-1).getBabyP(); 
 			Cat.getAnimal();
 			System.out.println("A baby cat!");
-			Cat.changeName(); 
-			System.out.println("remember to feed "+ Cat.getName()+" everyday, or it will die.");
+			System.out.println("Give a name to this cat !");
+			String newName= new String();
+			newName= new Scanner(System.in).next(); 
+			
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" "+zoo.get(i).getName());
+			}
+			zoo.get(animals-1).setName(newName); 
+			for(int i=0;i<zoo.size();i++)
+			{
+				System.out.println(i+" " +zoo.get(i).getName()+" ");
+			}
+			
+//			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
 			break; 
 		}
 		}
@@ -93,36 +152,36 @@ public class ZooRunner
 	public static void feedAnimal()
 	{
 		for(int i=0; i<zoo.size();i++)
-		{
-			System.out.println("Do you want to feed "+zoo.get(i).getName()+" ?");
-			System.out.println("its food cost "+zoo.get(i).getFoodP()+" .");
-			System.out.println("1. Yes.");
-			System.out.println("2. No");
-			Scanner keypad2= new Scanner(System.in); 
-			int feedA= keypad2.nextInt();
-			switch(feedA)
-			{
-			case 1: 
-				System.out.println("Thank you!");
-				break; 
-				
-			case 2:
-				zoo.get(i).setDayNF(zoo.get(i).getDayNF()+1);
-				if(zoo.get(i).getDayNF()==2)
-				{
-					System.out.println("T_T "+zoo.get(i).getName()+" died!");
-					zoo.remove(i);
-					i--; 
-					
-				}
-				else 
-				{
-					System.out.println("If you don't feed "+zoo.get(i).getName()+" tomorrow, it will die!");
-					
-				}
-			
-				
-			}
+		{ 
+//			System.out.println("Do you want to feed "+zoo.get(i).getName()+" ?");
+//			System.out.println("its food cost "+zoo.get(i).getFoodP()+" .");
+//			System.out.println("1. Yes.");
+//			System.out.println("2. No");
+//			Scanner keypad2= new Scanner(System.in); 
+//			int feedA= keypad2.nextInt();
+//			switch(feedA)
+//			{
+//			case 1: 
+//				System.out.println("Thank you!");
+//				break; 
+//				
+//			case 2:
+//				zoo.get(i).setDayNF(zoo.get(i).getDayNF()+1);
+//				if(zoo.get(i).getDayNF()==2)
+//				{
+//					System.out.println("T_T "+zoo.get(i).getName()+" died!");
+//					zoo.remove(i);
+//					i--; 
+//					
+//				}
+//				else 
+//				{
+//					System.out.println("If you don't feed "+zoo.get(i).getName()+" tomorrow, it will die!");
+//					
+//				}
+//			
+//				
+//			}
 		}
 	}
 

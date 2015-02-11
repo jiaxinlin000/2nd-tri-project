@@ -36,12 +36,12 @@ public class Fish extends Oviparous{
 		
 		
 	}
-	public static void changeName()
+	public  void changeName()
 	{
 		System.out.println("Give a name to this "+ type+" !");
 		Scanner keyboard= new Scanner(System.in); 
 		String newName= keyboard.nextLine(); 
-		Bird.setName(newName); 
+		Fish.setName(newName); 
 		
 		
 	}

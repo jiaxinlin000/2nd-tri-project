@@ -6,7 +6,7 @@ public  class Oviparous extends Animal
 		System.out.println("You got an egg ");
 		
 		}
-	public static void changeName()
+	public void changeName()
 	{
 		
 	}
