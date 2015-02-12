@@ -13,7 +13,7 @@ public class ZooRunner
 	public static void main(String[] args)
 		{
 		
-		while(start>50||zoo.size()>0)
+		while(start>=50||zoo.size()>0)
 		// 50 is the cheapest animal to get. As long as there are animals on the field and have money, game continues. 
 
 		{
@@ -143,7 +143,7 @@ public class ZooRunner
 		{
 			if(start<200)
 			{
-				System.out.println("You don't have enough money to get pig! Sorry.");
+				System.out.println("You don't have enough money to get cat! Sorry.");
 			}
 			else{
 			a= new Cat();
