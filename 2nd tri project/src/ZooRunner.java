@@ -35,6 +35,7 @@ public class ZooRunner
 			System.out.println();
 			System.out.println();
 		}
+		System.out.println("You have nothing left!");
 		System.out.println("GAME OVER!!!!!");
 	
 		}
@@ -54,7 +55,14 @@ public class ZooRunner
 		{
 		case 1:
 		{
-			a= new Fish();
+			if(start<50)
+			{
+				System.out.println("You don't have enough money to get fish! Sorry.");
+			}
+			else
+				{
+				a= new Fish();
+				
 			Animal a2=a; 
 			zoo.add(a2); 
 			
@@ -70,11 +78,18 @@ public class ZooRunner
 			zoo.get(animals-1).setName(newName); 
 		
 			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
+				}
 			break; 
 		}
 		case 2:
 		{
-			a= new Cat();
+			if(start<100)
+			{
+				System.out.println("You don't have enough money to get bird! Sorry.");
+			}
+			else
+			{
+			a= new Bird();
 			Animal a2=a; 
 			zoo.add(a2); 
 			
@@ -91,11 +106,19 @@ public class ZooRunner
 			
 			
 			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
+			}
 			break; 
 		}
 		case 3: 
 		{
-			a= new Cat();
+			if(start<70)
+			{
+				System.out.println("You don't have enough money to get pig! Sorry.");
+			}
+			else
+				{
+				a= new Pig();
+				
 			Animal a2=a; 
 			zoo.add(a2); 
 			
@@ -112,11 +135,17 @@ public class ZooRunner
 			
 			
 			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
+				}
 			break; 
 			
 		}
 		case 4:
 		{
+			if(start<200)
+			{
+				System.out.println("You don't have enough money to get pig! Sorry.");
+			}
+			else{
 			a= new Cat();
 			Animal a2=a; 
 			zoo.add(a2); 
@@ -134,6 +163,7 @@ public class ZooRunner
 		
 			
 			System.out.println("remember to feed "+ a2.getName()+" everyday, or it will die.");
+			}
 			break; 
 		}
 		}
@@ -143,7 +173,7 @@ public class ZooRunner
 	public static void feedAnimal()
 
 	{
-		for(int i=zoo.size()-1; i>0;i--)
+		for(int i=zoo.size()-1; i>-1;i--)
 		{ 
 			System.out.println("Do you want to feed "+zoo.get(i).getName()+" ?");
 			System.out.println("its food cost "+zoo.get(i).getFoodP()+" .");
@@ -151,7 +181,7 @@ public class ZooRunner
 			System.out.println("2. No");
 			if(start<zoo.get(i).getFoodP())
 				{
-				System.out.println("Sorry, you don't have enough money!");
+				System.out.println("Sorry, you cannot afford its food!");
 				zoo.get(i).setDayNF(zoo.get(i).getDayNF()+1);
 				if(zoo.get(i).getDayNF()==2)
 				{
@@ -181,6 +211,7 @@ public class ZooRunner
 					}
 				start-=zoo.get(i).getFoodP(); 
 				zoo.get(i).setSellP(zoo.get(i).getSellP()+1.5*zoo.get(i).getFoodP());
+				
 				break; 
 				
 			case 2:
@@ -203,12 +234,14 @@ public class ZooRunner
 				
 			}
 			}
+			System.out.println();
 		}
 	}
 	
 	public static void sellAnimal()
 		{
-		for(int i=zoo.size()-1;i>0;i--)
+		
+		for(int i=zoo.size()-1;i>-1;i--)
 			{
 			System.out.println("Do you want to sell "+zoo.get(i).getName()+" for "+zoo.get(i).getSellP()+" ?");
 			System.out.println("1. Yes.");
@@ -219,10 +252,11 @@ public class ZooRunner
 			{
 			case 1: 
 				System.out.println("You got "+zoo.get(i).getSellP()+" !");
+				
+				start+=zoo.get(i).getSellP();
 				zoo.remove(i);
 				
 				animals--; 
-				start+=zoo.get(i).getSellP(); 
 				break; 
 				
 			case 2:
